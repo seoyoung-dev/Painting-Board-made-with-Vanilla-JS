@@ -10,7 +10,7 @@ body {
   align-items: center;
 }
 
-.paintBoard {
+#paintBoard {
   width: 500px;
   height: 500px;
   background-color: white;
@@ -18,13 +18,31 @@ body {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+.btns__btn {
+  /* 버튼의 모든 설정을 초기화하는 방법 */
+  all: unset;
+  width: 70px;
+  height: 20px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btns__btn:active {
+  transform: scale(0.98);
+}
+
 .colorsPalette {
   display: flex;
   /* 왜 inline-block 하면 안먹지? */
 }
 
-.background-colors {
+.colors {
   width: 30px;
   height: 30px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   border-radius: 50%;
+  cursor: pointer;
 }

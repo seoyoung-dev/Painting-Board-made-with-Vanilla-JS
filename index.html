@@ -7,25 +7,26 @@
     <title>Paint JS</title>
   </head>
   <body>
-    <div class="paintBoard"></div>
+    <!-- canvas 라는 tag도 존재 -->
+    <canvas id="paintBoard"></canvas>
     <div class="sizeBar">
-      <input type="range" />
+      <!-- min: 최소값 / max: 최대값 / value: 기본값 / step: 한 단계당 값 -->
+      <input type="range" min="0.1" max="5.0" value="2.5" step="0.1" />
     </div>
     <div class="btns">
-      <button>Fill</button>
-      <button>Paint</button>
-      <button>Save</button>
+      <button class="btns__btn">Fill</button>
+      <button class="btns__btn">Save</button>
     </div>
     <div class="colorsPalette">
-      <div class="background-colors" style="background-color: #2c2c2c"></div>
-      <div class="background-colors" style="background-color: white"></div>
-      <div class="background-colors" style="background-color: #ff3b30"></div>
-      <div class="background-colors" style="background-color: #ff9500"></div>
-      <div class="background-colors" style="background-color: #ffcc00"></div>
-      <div class="background-colors" style="background-color: #4cd963"></div>
-      <div class="background-colors" style="background-color: #5ac8fa"></div>
-      <div class="background-colors" style="background-color: #0579ff"></div>
-      <div class="background-colors" style="background-color: #5856d6"></div>
+      <div class="colors" style="background-color: #2c2c2c"></div>
+      <div class="colors" style="background-color: white"></div>
+      <div class="colors" style="background-color: #ff3b30"></div>
+      <div class="colors" style="background-color: #ff9500"></div>
+      <div class="colors" style="background-color: #ffcc00"></div>
+      <div class="colors" style="background-color: #4cd963"></div>
+      <div class="colors" style="background-color: #5ac8fa"></div>
+      <div class="colors" style="background-color: #0579ff"></div>
+      <div class="colors" style="background-color: #5856d6"></div>
     </div>
     <script src="app.js"></script>
   </body>
