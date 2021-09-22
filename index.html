@@ -8,16 +8,17 @@
   </head>
   <body>
     <!-- canvas 라는 tag도 존재 -->
-    <canvas id="paintBoard"></canvas>
+    <canvas id="paintBoard" width="500px" height="500px"></canvas>
     <div class="sizeBar">
       <!-- min: 최소값 / max: 최대값 / value: 기본값 / step: 한 단계당 값 -->
       <input type="range" min="0.1" max="5.0" value="2.5" step="0.1" />
     </div>
     <div class="btns">
-      <button class="btns__btn">Fill</button>
-      <button class="btns__btn">Save</button>
+      <button class="btns__btn" id="fillBtn">Fill</button>
+      <button class="btns__btn" id="paintBtn">Paint</button>
+      <button class="btns__btn" id="saveBtn">Save</button>
     </div>
-    <div class="colorsPalette">
+    <div id="colorsPalette">
       <div class="colors" style="background-color: #2c2c2c"></div>
       <div class="colors" style="background-color: white"></div>
       <div class="colors" style="background-color: #ff3b30"></div>
